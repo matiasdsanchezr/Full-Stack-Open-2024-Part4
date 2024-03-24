@@ -1,0 +1,18 @@
+@title = Title of the blog 2
+@author = Matias Sanchez
+@url = www.image.com
+@likes = 2
+
+POST http://localhost:3001/api/blogs HTTP/1.1
+content-type: application/json
+
+{
+    "title": "{{title}}",
+    "author": "{{author}}",
+    "url": "{{url}}",
+    "likes": "{{likes}}"
+}
+
+###
+
+GET http://localhost:3001/api/blogs HTTP/1.1
